@@ -1,6 +1,16 @@
-@media screen and (max-width: 550px){
+@media only screen and (min-width: 650px){
 
-  
+
+
+  body {
+    margin: 50px;
+    background-color: rgb(211, 211, 211);
+
+    .calculator {
+      height: 80%;
+      width: 70%;
+    }
+  }
   }
    
   

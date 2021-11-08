@@ -1,6 +1,20 @@
+@media only screen and (min-width: 650px) {
+  body {
+    margin: 50px;
+    background-color: lightgray;
+  }
+  body .calculator {
+    height: 80%;
+    width: 70%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  height: 100vh;
 }
 
 .calculator {
@@ -16,6 +30,7 @@
   height: 35%;
   width: 100%;
   font-family: "Mochiy Pop P One", sans-serif;
+  color: whitesmoke;
 }
 .calculator__output__input {
   height: 100%;
@@ -43,69 +58,9 @@
   background-color: #1e2233;
   color: whitesmoke;
   padding: none;
-  border: none;
   align-self: center;
   justify-self: center;
   font-family: "Mochiy Pop P One", sans-serif;
   font-size: 150%;
-}
-.calculator__buttons > button:nth-child(1) {
-  vertical-align: middle;
-}
-.calculator__buttons > button:nth-child(2) {
-  vertical-align: middle;
-}
-.calculator__buttons > button:nth-child(3) {
-  vertical-align: middle;
-}
-.calculator__buttons > button:nth-child(4) {
-  vertical-align: middle;
-}
-.calculator__buttons > button:nth-child(5) {
-  vertical-align: middle;
-}
-.calculator__buttons > button:nth-child(6) {
-  vertical-align: middle;
-}
-.calculator__buttons > button:nth-child(7) {
-  vertical-align: middle;
-}
-.calculator__buttons > button:nth-child(8) {
-  vertical-align: middle;
-}
-.calculator__buttons > button:nth-child(9) {
-  vertical-align: middle;
-}
-.calculator__buttons > button:nth-child(10) {
-  vertical-align: middle;
-}
-.calculator__buttons > button:nth-child(11) {
-  vertical-align: middle;
-}
-.calculator__buttons > button:nth-child(12) {
-  vertical-align: middle;
-}
-.calculator__buttons > button:nth-child(13) {
-  vertical-align: middle;
-}
-.calculator__buttons > button:nth-child(14) {
-  vertical-align: middle;
-}
-.calculator__buttons > button:nth-child(15) {
-  vertical-align: middle;
-}
-.calculator__buttons > button:nth-child(16) {
-  vertical-align: middle;
-}
-.calculator__buttons > button:nth-child(17) {
-  vertical-align: middle;
-}
-.calculator__buttons > button:nth-child(18) {
-  vertical-align: middle;
-}
-.calculator__buttons > button:nth-child(19) {
-  vertical-align: middle;
-}
-.calculator__buttons > button:nth-child(20) {
   vertical-align: middle;
 }

@@ -13,6 +13,7 @@
     height: 35%;
     width: 100%;
     font-family: $font-main;
+    color: whitesmoke;
 
     &__input {
       height: 100%;
@@ -46,91 +47,11 @@
       background-color: rgb(30, 34, 51);
       color: whitesmoke;
       padding: none;
-      border: none;
+      // border: none;
       align-self: center;
       justify-self: center;
       font-family: $font-main;
       font-size: 150%;
- 
-    }
-
-    & > button:nth-child(1) {
-      vertical-align: middle;
-    }
-
-    & > button:nth-child(2) {
-      vertical-align: middle;
-    }
-
-    & > button:nth-child(3) {
-      vertical-align: middle;
-    }
-
-    & > button:nth-child(4) {
-      vertical-align: middle;
-    }
-
-    & > button:nth-child(5) {
-      vertical-align: middle;
-    }
-
-    & > button:nth-child(6) {
-      vertical-align: middle;
-    }
-
-    & > button:nth-child(7) {
-      vertical-align: middle;
-    }
-
-    & > button:nth-child(8) {
-      vertical-align: middle;
-    }
-
-    & > button:nth-child(9) {
-      vertical-align: middle;
-    }
-
-    & > button:nth-child(10) {
-      vertical-align: middle;
-    }
-
-    & > button:nth-child(11) {
-      vertical-align: middle;
-    }
-
-    & > button:nth-child(12) {
-      vertical-align: middle;
-    }
-
-    & > button:nth-child(13) {
-      vertical-align: middle;
-    }
-
-    & > button:nth-child(14) {
-      vertical-align: middle;
-    }
-
-    & > button:nth-child(15) {
-      vertical-align: middle;
-    }
-
-    & > button:nth-child(16) {
-      vertical-align: middle;
-    }
-
-    & > button:nth-child(17) {
-      vertical-align: middle;
-    }
-
-    & > button:nth-child(18) {
-      vertical-align: middle;
-    }
-
-    & > button:nth-child(19) {
-      vertical-align: middle;
-    }
-
-    & > button:nth-child(20) {
       vertical-align: middle;
     }
 
