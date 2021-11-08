@@ -44,15 +44,15 @@
       width: 80%;
       height: 80%;
       border-radius: 10px;
-      background-color: rgb(30, 34, 51);
+      background-color: rgb(39, 47, 82);
       color: whitesmoke;
       padding: none;
-      // border: none;
       align-self: center;
       justify-self: center;
       font-family: $font-main;
       font-size: 150%;
       vertical-align: middle;
+      overflow: clip;
     }
 
   }
