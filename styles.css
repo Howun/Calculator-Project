@@ -37,12 +37,14 @@ body {
   grid-column: 1/1;
   grid-row: 1/2;
   background-color: #161327;
+  color:white;
 }
 .calculator__output__result {
   background-color: #161327;
   height: 100%;
   grid-column: 1/1;
   grid-row: 2/3;
+  color:white;
 }
 .calculator__buttons {
   height: 65%;
