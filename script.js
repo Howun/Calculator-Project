@@ -1,12 +1,10 @@
 const numButtons = document.querySelectorAll(".calculator__buttons__number");
 let answerButton = document.querySelector(".calculator__output__answer");
 const operatorButtons = document.querySelectorAll(".calculator__buttons__operation");
-const equalsButton = document.querySelectorAll(".calculator__buttons__equals");
-const clearAllButton = document.querySelectorAll(".calculator__buttons__clearAll");
-const deleteButton = document.querySelectorAll(".calculator__buttons__delete");
+const equalsButton = document.querySelector(".calculator__buttons__equals");
+const clearAllButton = document.querySelector(".calculator__buttons__clearAll");
+const deleteButton = document.querySelector(".calculator__buttons__delete");
 let currentDisplay = document.querySelector(".calculator__output__display");
-
-
 const valueLength = (numLength) => currentValue.length < numLength;
 const refreshDisplay = (values) => currentDisplay.innerHTML = values;
 const clearDisplay = (clearScreen) => clearAllButton.innerHTML = clearScreen;
@@ -19,72 +17,57 @@ let calculatedValue = 0;
 let previousValue = "";
 
 
-// const numList = Array.from(numBut);
-// console.log(numList);
-// const operatorList = Array.from(operatorButtons);
-// console.log(operatorList);
-
-
-
-// for(let i = 0; i < numList.length; i++) {
-//   numList[i].addEventListener("click", () => {
-//     currentValue.push(numList[i].innerHTML)
-//     console.log(currentValue)
-//     currentDisplay.innerHTML = currentValue += numList
-//   })
-// }
-
+//goes through the number buttons and stores the values up to a sting length of 10.
 numButtons.forEach((button) => {
-  button.addEventListener("click", (event) => {
+  button.addEventListener("click", (changes) => {
     if(valueLength(10)) {
-      (currentValue) ? currentValue = event.target.innerHTML : currentValue += event.target.innerHTML;
+      //if NOT currentValue then either do this or that if true ot false
+      !currentValue ? currentValue = changes.target.innerHTML : currentValue += changes.target.innerHTML;
       refreshDisplay(currentValue);
+      console.log(currentValue);
     }
   })
 })
 
+
+//selects the operator clicked, and deletes a previous operator if it was pressed so it doesn't have two operators and cause error
 operatorButtons.forEach((button) => {
-  button.addEventListener("click", (event) => {
+  //removes any previous operator stored
+  button.addEventListener("click", (changes) => {
     operatorButtons.forEach((button) => {
       button.classList.remove("current-operator");
     });
+    //adds operator clicked
     button.classList.add("current-operator");
-    operatorValue = event.target.value;
-    console.log("operator pressed");
+    operatorValue = changes.target.value;
+    console.log(operatorButtons);
     if (currentValue) {
       storedValue = parseFloat(currentValue);
       currentValue = ""
+      console.log(operatorValue);
     }
   });
 });
 
-// for(let i=0; i < operatorList.length; i++) {
-//   operatorList[i].addEventListener("click", () => {
-    
-//   console.log("operation button pressed")
-
-// })
-// }
-
-// equalsButton.addEventListener("click", () => {
-//   console.log(parseFloat(currentValue))
-// })
-
-// clearAllButton.addEventListener("click" () => {
-//   if (clearAllButton.innerHTML === "AC") {
-//     currentDisplay("0");
-//   }
-// })
-
-
-
-
-// let currentDisplay = currentDisplay += numList;
+//for when equals button is hit
+equalsButton.addEventListener("click", () => {
+  operatorButtons.forEach((button) => {
+    //this removes a operator if pressed before the equals so it doesn't go 1+1+= and create an error
+    button.classList.remove("current-operator");
+  });
+  //switch case, the operators have values so when one is pressed then one of the cases run
+  if(!currentValue) previousValue === "" ? currentValue = storedValue : currentValue = previousValue;
+  switch (operatorValue) {
+    case "plus" : calculatedValue = storedValue + parseFloat(currentValue); break;
+    case "minus" : calculatedValue = storedValue - parseFloat(currentValue); break;
+    case "times" : calculatedValue = storedValue * parseFloat(currentValue); break;
+    case "divide" :  calculatedValue = storedValue / parseFloat(currentValue); break;
+  };
+  //case applied and pushed to refresh the display and sets the new store value, and previous value
+  refreshDisplay(calculatedValue);
+  storedValue = calculatedValue;
+  previousValue = currentValue;
+  currentValue = "";
+});
 
 
-// currentNumber.innerHTML = currentNumber;
-
-
-
-
-//basically.... Just put each number pushed into a array, OR just store the numbers and do stuff to the stored number with the number you're inputting
