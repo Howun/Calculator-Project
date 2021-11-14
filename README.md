@@ -9,3 +9,14 @@ The aim of this calculator project was to build a basic calculator that can solv
   <li>JavaScript</li>
   <li>CSS</li>
   <li>SCSS</li>
+</ul>
+
+ <h3>Requirements</h3>
+  <ul>
+  <li>Do not use the eval() function</li>
+  <li>Minimum of 2 inputs</li>
+  <li>Perforns an operation</li>
+  <li>Returns the output</li>
+
+  <h2> About </h2>
+  
