@@ -32,19 +32,11 @@ body {
   font-family: "Mochiy Pop P One", sans-serif;
   color: whitesmoke;
 }
-.calculator__output__input {
-  height: 100%;
-  grid-column: 1/1;
-  grid-row: 1/2;
-  background-color: #161327;
-  color:white;
-}
-.calculator__output__result {
-  background-color: #161327;
-  height: 100%;
-  grid-column: 1/1;
-  grid-row: 2/3;
-  color:white;
+.calculator__output__display {
+  display: flex;
+  justify-self: right;
+  align-self: flex-end;
+  font-size: 40px;
 }
 .calculator__buttons {
   height: 65%;

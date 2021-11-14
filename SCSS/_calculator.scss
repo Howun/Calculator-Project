@@ -15,19 +15,26 @@
     font-family: $font-main;
     color: whitesmoke;
 
-    &__input {
-      height: 100%;
-      grid-column: 1/1;
-      grid-row: 1/2;
-      background-color: rgb(22, 19, 39);
+    &__display {
+      display: flex;
+      justify-self: right;
+      align-self: flex-end;
+      font-size: 40px;
     }
 
-    &__result {
-      background-color: rgb(22, 19, 39);
-      height: 100%;
-      grid-column: 1/1;
-      grid-row: 2/3;
-    }
+    // &__input {
+    //   height: 100%;
+    //   grid-column: 1/1;
+    //   grid-row: 1/2;
+    //   background-color: rgb(22, 19, 39);
+    // }
+
+    // &__result {
+    //   background-color: rgb(22, 19, 39);
+    //   height: 100%;
+    //   grid-column: 1/1;
+    //   grid-row: 2/3;
+    // }
   }
 
 
