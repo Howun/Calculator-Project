@@ -99,5 +99,5 @@ clearAllButton.addEventListener("click", () => {
 
 // Things to be added: 
 // - Ans button
-// - Delete button
+// - Backspace button
 // - the :D button that changes the colour between dark and light theme
