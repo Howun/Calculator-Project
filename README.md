@@ -11,7 +11,7 @@ The aim of this calculator project was to build a basic calculator that can solv
   <li>SCSS</li>
 </ul>
 
- <h3>Requirements</h3>
+<h3>Requirements</h3>
   <ul>
     <li>Do not use the eval() function</li>
     <li>Minimum of 2 inputs</li>
